@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+
+  <meta name="theme-color"
+        content="#020c4d">
+
+  <meta name="description"
+        content="Carômetro CEMSL - Matutino 2026">
+
+  <link rel="manifest"
+        href="manifest.json">
+
+  <link rel="icon"
+        href="icon-192.png">
+
+  <title>Carômetro CEMSL</title>
+
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #020c4d;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <iframe
+    src="https://script.google.com/macros/s/AKfycbzHtSz3OB8zMH-CW9jmHSORUPdcVuqDwNgiU-goqnk0IMhKJUPnOn2wA-JoY6hr80WRpA/exec"
+    allow="fullscreen">
+  </iframe>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register("service-worker.js");
+      });
+    }
+  </script>
+
+</body>
+</html>
